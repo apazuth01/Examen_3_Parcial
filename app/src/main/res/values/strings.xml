@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Examen_3_Parcial</string>
+    <string-array name="CbTiempo">
+        <item>Seleccione</item>
+        <item>Horas</item>
+        <item>Diaria</item>
+        <item>Semanal</item>
+
+    </string-array>
+</resources>

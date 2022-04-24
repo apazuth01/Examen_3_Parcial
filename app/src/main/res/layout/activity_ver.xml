@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerActivity">
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="352dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName|textCapWords"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/CbTiempo"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="1dp"
+        android:entries="@array/CbTiempo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:text="Tiempo"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPeriocidad"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:inputType="number"
+        android:labelFor="@+id/viewEdads"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnGuarda"
+        android:layout_width="124dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="136dp"
+        android:text="Guardar"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/viewPeriocidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="Periocidad"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="number"
+        android:labelFor="@+id/viewEdads"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <TextView
+        android:id="@+id/viewCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="84dp"
+        android:text="Cantidad"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="192dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="456dp"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
+        app:layout_constraintVertical_bias="0.736"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+    <ImageButton
+        android:id="@+id/btnCamara"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/camera_icon"
+        android:backgroundTint="@color/white"
+        android:longClickable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/camera_icon"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btnGuarda"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/viewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:text="Descripcion"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_edit"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_delete"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fabEditar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTiempo"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:inputType="number"
+        android:labelFor="@+id/viewEdads"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/txtBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaMedicamentos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9" />
+
+
+        <Button
+            android:id="@+id/bnuevo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bordes_redondos"
+            android:backgroundTint="@color/teal_700"
+            android:foreground="@drawable/ic_add"
+            android:textColor="@color/black"
+            app:cornerRadius="50dp"
+            app:iconPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.969"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/teal_700" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
